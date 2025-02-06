@@ -12,7 +12,7 @@ canvas{
         linear,
         left bottom,
         left top,
-        color-stop(0, rgb(219, 217, 229)),
+        color-stop(0, rgb(241, 125, 210)),
         color-stop(0.84, rgb(67, 157, 177))
     );
 }
