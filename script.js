@@ -19,8 +19,8 @@ var image = new Image();
 image.src = 'img/sakura1.png';
 
 for (var i = 0; i < thingsCount; i++) {
-    let opacity = Math.random() + 0.4;
-    let thingWidth = (Math.floor(Math.random() * 20) + 20) * (opacity + 0.5);
+    let opacity = Math.random() + 0.6;
+    let thingWidth = (Math.floor(Math.random() * 20) + 20) * (opacity + 0.6);
     let thingHeight = image.naturalHeight / image.naturalWidth * thingWidth;
     let speed = Math.random() * 1 + 0.5;
     things.push({
