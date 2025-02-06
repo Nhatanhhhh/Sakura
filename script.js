@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
     things = [],
-    thingsCount = 124,
+    thingsCount = 12,
     mouse = {
         x: -100,
         y: -100
@@ -16,11 +16,11 @@ var image = new Image();
 //image.src = 'https://i.pinimg.com/originals/90/2c/2b/902c2bbccb72ca76cf3bbe95741174e9.png';
 //image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Love_heart_uidaodjsdsew.gif/1200px-Love_heart_uidaodjsdsew.gif';
 //image.src = 'https://static.wixstatic.com/media/2cd43b_57438aebde5a4b0fa20c6880a9fafabf~mv2.png/v1/fill/w_320,h_272,fp_0.50_0.50/2cd43b_57438aebde5a4b0fa20c6880a9fafabf~mv2.png';
-image.src = 'img/sakura.png';
+image.src = 'img/sakura-leaf.png';
 
 for (var i = 0; i < thingsCount; i++) {
-    let opacity = Math.random() + 0.4;
-    let thingWidth = (Math.floor(Math.random() * 20) + 20) * (opacity + 0.4);
+    let opacity = Math.random() + 0.1;
+    let thingWidth = (Math.floor(Math.random() * 20) + 20) * (opacity + 0.2);
     let thingHeight = image.naturalHeight / image.naturalWidth * thingWidth;
     let speed = Math.random() * 1 + 0.5;
     things.push({
